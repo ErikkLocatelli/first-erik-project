@@ -12,7 +12,7 @@
     </ul>
 
     <!-- @if (selectedUser) { 1-->
-        <app-tasks *ngIf="selectedUser; else fallback" [name] = "selectedUser.name" />
+    <app-tasks *ngIf="selectedUser; else fallback" [name] = "selectedUser.name"  [id] = "selectedUser.id"/>
     <!-- @else { -->
     <ng-template #fallback>
         <p id="fallback">No user selected</p>
