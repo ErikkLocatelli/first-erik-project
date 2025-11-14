@@ -10,7 +10,6 @@
             </li>
        <!-- } -->
     </ul>
-
     <!-- @if (selectedUser) { 1-->
     <app-tasks *ngIf="selectedUser; else fallback" [name] = "selectedUser.name"  [id] = "selectedUser.id"/>
     <!-- @else { -->
