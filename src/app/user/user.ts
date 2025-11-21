@@ -11,6 +11,8 @@ import { Component, EventEmitter, Input, Output} from '@angular/core'
 export class User {
   
   @Input({required: true}) user! : { id: String; name: String; avatar: String };
+  @Input({ required: true }) selected!: boolean; 
+
 
   @Output() select = new EventEmitter(); // outputando o evento para o componente pai
 
